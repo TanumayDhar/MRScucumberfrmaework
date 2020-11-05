@@ -1,9 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mrs.cucumberFramework</groupId>
-  <artifactId>MRScucumberFramework</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mrs.cucumberFramework</groupId>
+	<artifactId>MRScucumberFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -31,7 +33,7 @@
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.4</version>
-			
+
 		</dependency>
 
 		<dependency>
@@ -61,11 +63,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
-				<testFailureIgnore>true</testFailureIgnore>
+					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-					<!-- src/test/resources/testSuites/testng.xml -->
+						<!-- src/test/resources/testSuites/testng.xml -->
 						<suiteXmlFile>testNg.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<configuration>
+						<skipTests>false</skipTests>
+					</configuration>
 				</configuration>
 			</plugin>
 			<plugin>
