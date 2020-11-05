@@ -11,7 +11,7 @@
 				steps 
 				{
                
-               
+                bat 'mvn clean'
 				git "https://github.com/TanumayDhar/MRScucumberfrmaework.git"
                 
 				}
