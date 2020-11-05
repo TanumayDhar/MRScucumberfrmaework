@@ -23,7 +23,8 @@
              
           
        			echo 'Scanning project with SonarQube analyser'
-				bat 'mvn clean package sonar:sonar'
+				//bat 'mvn clean package sonar:sonar'
+				bat 'mvn sonar:sonar'
                 
                 
 				}
@@ -34,7 +35,7 @@
 				{
             
 				echo 'Test and Deploying in server...'
-				bat 'mvn test -Dtest=TestRunner'
+				bat 'mvn test -Dtest=TestRunner test'
             
 				}
 			}
