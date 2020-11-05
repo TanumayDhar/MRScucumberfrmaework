@@ -35,7 +35,8 @@
 				{
             
 				echo 'Test and Deploying in server...'
-				bat 'mvn test -Dtest=TestRunner test'
+				//bat 'mvn test -Dtest=TestRunner test'
+				bat 'mvn test'
             
 				}
 			}
