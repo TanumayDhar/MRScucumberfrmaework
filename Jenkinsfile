@@ -48,5 +48,7 @@
     body: """<p>Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a></p>""",
     to: "dhartanumay@gmail.com",
     from: "dhartanumay@gmail.com"
-)
+			
+						)
+			}
 }
